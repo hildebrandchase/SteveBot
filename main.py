@@ -34,6 +34,6 @@ GUILD_ID = discord.Object(id=594913076390789138)
 async def countdown(interaction: discord.Interaction):
     now = datetime.datetime.now()
     release = datetime.datetime(2026, 1, 15, 12)
-    await interaction.response.send_message(f'Hackero Next releases in {release - now}!')
+    await interaction.response.send_message(f'Hackero Next releases in {release - now}!!!')
 
 client.run(os.getenv('DISCORD_TOKEN'))
